@@ -42,7 +42,7 @@ def about():
 
     title_text = "I have used code from Computer Architecture to AI, in generating digital circuits, processing signals, " \
                  "deploying apps and building machine learning models. My eclectic profile combines a technical background" \
-                 " in electrical engineering and data science with professional experience in construction management."
+                 " in electrical engineering and data science with professional experience in construction management and development."
     skills = "skills"
 
     return render_template('/about.html',
