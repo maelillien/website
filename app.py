@@ -8,12 +8,14 @@ app = Flask(__name__)
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    greeting = 'Featured Projects'
+
     title_text = "Project management professional and aspiring quant. Graduate in Data Science and Electrical " \
                  "Engineering. Hobby programmer particularly interested in the intersection of code, data and finance."
 
+    section_title = 'Featured Projects'
+
     return render_template('/index.html',
-                           greeting=greeting,
+                           section_title=section_title,
                            title_text=title_text,
                            title="CODE, DATA & FINANCE",
                            id="index")
